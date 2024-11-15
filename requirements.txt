@@ -1,4 +1,5 @@
 streamlit
+setuptools
 pysqlite3-binary
 openai
 pandas
