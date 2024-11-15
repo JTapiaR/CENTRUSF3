@@ -9,6 +9,11 @@ from crewai import Agent, Task, Crew
 from langchain.llms.base import LLM
 from typing import Optional, List
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+
 # Configurar la clave API de Together AI
 
 #TOGETHER_API_KEY= "7d6a9a16f62c1b6056b3a4e56b55c5528f5f86b0fca0a648553ac9c7e250e6cd" # Reemplaza con tu clave de Together AI
